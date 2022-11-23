@@ -13,4 +13,17 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimaryDark</item>
         <!-- Customize your theme here. -->
     </style>
+
+    // Textviews
+    <style name="default_textview" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/futur</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Mega_title" parent="default_textview">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">100sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>

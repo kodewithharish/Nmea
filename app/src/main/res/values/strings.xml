@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Nmea</string>
+
+    // Splash screen
+    <string name="nmea_title_first">N</string>
+    <string name="nmea_title_second">M</string>
+    <string name="nmea_title_third">E</string>
+    <string name="nmea_title_fourth">A</string>
+
 </resources>
