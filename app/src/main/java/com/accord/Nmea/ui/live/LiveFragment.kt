@@ -22,7 +22,6 @@ class LiveFragment:BaseFragment<LiveViewModel>() {
 
         nmea_tv=view.findViewById(R.id.nmealog)
 
-        requireActivity().startService(Intent(activity, NmeaService::class.java))
 
 
     }
