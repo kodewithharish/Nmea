@@ -43,67 +43,50 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline_top" />
 
-
-    <ImageView
-        android:id="@+id/img3"
-        android:layout_width="100dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:rotation="270"
-        android:src="@drawable/ic_satilite"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@color/red"
+        android:id="@+id/constraint1"
+
+        app:layout_constraintTop_toTopOf="@id/guideline_top"
         app:layout_constraintLeft_toLeftOf="@id/guideline_left"
-        app:layout_constraintRight_toLeftOf="@id/img4"
-        app:layout_constraintTop_toBottomOf="@id/guideline_top" />
-
-
-    <ImageView
-        android:id="@+id/img4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_satilite"
         app:layout_constraintRight_toRightOf="@id/guideline_right"
-        app:layout_constraintTop_toBottomOf="@id/guideline_top"
-
-        />
+        >
 
 
-    <ImageView
-        android:id="@+id/img2"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_settings_datums"
-        app:layout_constraintBottom_toTopOf="@id/tv1"
-        app:layout_constraintLeft_toRightOf="@id/guideline_left"
-        app:layout_constraintRight_toLeftOf="@id/guideline_right" />
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp"
-        android:gravity="center"
-        android:text="Nmea"
-        android:textColor="@color/black"
-        android:textSize="40dp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@id/accord_logo"
-        app:layout_constraintLeft_toRightOf="@id/guideline_left"
-        app:layout_constraintRight_toLeftOf="@id/guideline_right" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint2"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:translationZ="4dp"
+        app:layout_constraintRight_toRightOf="@id/guideline_right"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintTop_toBottomOf="@id/constraint1">
+
+        <TextView
+            android:id="@+id/nmealog"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+        </TextView>
 
 
-    <ImageView
-        android:id="@+id/accord_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginBottom="100dp"
-        android:src="@drawable/accord_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
