@@ -1,10 +1,13 @@
-package com.accord.Nmea.ui
+package com.accord.Nmea.ui.live
 
 import com.accord.Nmea.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 
-class MainViewModel: BaseViewModel() {
+class LiveViewModel:BaseViewModel() {
+
+
     override fun onCreate() {
     }
+
 
 }
