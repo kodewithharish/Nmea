@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.accord.Nmea">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.accord.nmea">
 
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage"  android:maxSdkVersion="29"/>
+
+
+
+
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -13,19 +19,20 @@
 
 
     <application
-        android:name=".App"
+        android:name="com.accord.nmea.App"
         android:allowBackup="true"
         android:icon="@drawable/ic_satilite"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.Nmea">
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.accord.nmea.ui.MainActivity"
             android:exported="false"
             android:label="@string/title_activity_main" />
         <activity
-            android:name=".ui.SplashScreenActivity"
+            android:name="com.accord.nmea.ui.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,7 +41,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".service.NmeaService"
+        <service android:name="com.accord.nmea.service.NmeaService"
             android:foregroundServiceType="location"/>
     </application>
 
