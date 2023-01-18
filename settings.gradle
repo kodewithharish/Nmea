@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Nmea"
 include ':app'
+include ':nmea-parser'

@@ -120,7 +120,7 @@ class NmeaService : Service(), OnNmeaMessageListener,LocationListener {
         override fun onFirstFix(ttffMillis: Int) {}
 
         override fun onSatelliteStatusChanged(status: GnssStatus) {
-            Log.v(TAG, "GNSS Status: " + status.satelliteCount + " satellites.")
+           // Log.v(TAG, "GNSS Status: " + status.satelliteCount + " satellites.")
 
 
         }
